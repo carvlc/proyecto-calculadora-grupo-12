@@ -6,7 +6,9 @@ function getPantalla(event) {
 function asignarNumero(event) {
     document.getElementById(pantalla).value += event.srcElement.value
 }
-
+function asignarValorSlider(event){
+    document.getElementById('pantalla-2').value = event.srcElement.value
+}
 function calcular(){
     console.log('calculando')
     let valor1 = Number(document.getElementById('pantalla-1').value)
@@ -16,4 +18,6 @@ function calcular(){
 
     document.getElementById('propina').innerHTML = `Propina: ${propina}` 
     document.getElementById('total').innerHTML = `Total a Pagar: ${valor1 + propina}`
+    document.getElementById('pantalla-1').value = null
+    document.getElementById('pantalla-2').value = null
 }
