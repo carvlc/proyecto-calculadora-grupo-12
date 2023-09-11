@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="container-calculadora">
+            <h1 class="texto">CALCULADORA DE PORCENTAJE</h1>
+            <input id="pantalla-1" class="item-container" type="number" onclick="getPantalla(event)">
+            <input id="pantalla-2" class="item-container" type="number" onclick="getPantalla(event)">
+            <div id="calculadora" class="item-container pad-numerico">
+                <input class="boton-pad" type="button" value="1" onclick="asignarNumero(event)">
+                <input class="boton-pad" type="button" value="2" onclick="asignarNumero(event)">
+                <input class="boton-pad" type="button" value="3" onclick="asignarNumero(event)">
+                <input class="boton-pad" type="button" value="4" onclick="asignarNumero(event)">
+                <input class="boton-pad" type="button" value="5" onclick="asignarNumero(event)">
+                <input class="boton-pad" type="button" value="6" onclick="asignarNumero(event)">
+                <input class="boton-pad" type="button" value="7" onclick="asignarNumero(event)">
+                <input class="boton-pad" type="button" value="8" onclick="asignarNumero(event)">
+                <input class="boton-pad" type="button" value="9" onclick="asignarNumero(event)">
+                <input class="boton-pad" type="button" value="0" onclick="asignarNumero(event)">
+                <input class="boton-pad" type="reset" value="borrar" id="borrar"></input>
+                <input class="boton-pad" type="button" value="calcular" id="btn-calcular" onclick="calcular()">
+            </div>
+
+            <label id="total2"></label>
+        </form>
+        <div class="container-resultado">
+            <h2 id="propina">Propina:</h2>
+            <h2 id="total">Total a Pagar:</h2>
+        </div>
+    </div>
+    <script src="../src/index.js"></script>
+
+</body>
+
+</html>
