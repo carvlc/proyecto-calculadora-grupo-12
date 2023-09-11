@@ -16,4 +16,6 @@ function calcular(){
 
     document.getElementById('propina').innerHTML = `Propina: ${propina}` 
     document.getElementById('total').innerHTML = `Total a Pagar: ${valor1 + propina}`
+    document.getElementById('pantalla-1').value = null
+    document.getElementById('pantalla-2').value = null
 }
